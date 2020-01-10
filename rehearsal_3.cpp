@@ -1,6 +1,23 @@
 #include <iostream>
-
-//Write sumSqrt() here.
+#include<cmath>
+using namespace std;
+double sumSqrt(double A)
+{      
+    double B=0;
+    double L=0.00;
+    double E=1+B;
+    while (L<A)
+    {
+        B=B+(1/sqrt(A-L));
+        L++;
+    }
+    
+   if (A<=0)
+   {
+       return L;
+   }
+    return B;
+}
 
 
 int main()

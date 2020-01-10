@@ -1,7 +1,18 @@
 #include <iostream>
+using namespace std;
+string conpress(string A){
+	int a=A.size();
+	if(a>0){
+		int i=0;
+		string C;
+		while(i<a){
+			C=C+A[i];
+			i=i+3;
+		}
+		return C;
+	}	
 
-//Write compress() here.
-
+}
 int main()
 {
     string a = conpress("ABCDEFGHIJKLMN");
